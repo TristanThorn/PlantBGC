@@ -3,9 +3,9 @@ import pandas as pd
 from difflib import SequenceMatcher
 
 # Load the two TSV files
-plantismash_dir = "/Users/cassandrayang/Desktop/plantismash_grouped/"
-plantbgc_dir = "/Users/cassandrayang/Desktop/plantbgc_grouped/"
-output_dir = "/Users/cassandrayang/Desktop/similarity_output/"
+plantismash_dir = "./plantismash_grouped/"
+plantbgc_dir = "./plantbgc_grouped/"
+output_dir = "./similarity_output/"
 
 plantismash_files = sorted([f for f in os.listdir(plantismash_dir) if f.endswith(".tsv")])
 plantbgc_files = sorted([f for f in os.listdir(plantbgc_dir) if f.endswith(".tsv")])
